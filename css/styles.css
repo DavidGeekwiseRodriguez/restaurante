@@ -9,15 +9,29 @@ p {
   border-color: transparent;
 }
 
-.navbar-default .navbar-nav>.active>a,
-.navbar-default .navbar-nav>.active>a:focus,
-.navbar-default .navbar-nav>.active>a:hover {
+#bs-example-navbar-collapse-1 {
+  padding-right: 25px;
+}
+
+.navbar-default .navbar-nav>.active>a {
   color: #FFFFFF;
+  background-color: rgba(30, 30, 30, .6);
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+  color: #F8512F;
   background-color: rgba(30, 30, 30, .6);
 }
 
 .navbar-default .navbar-nav>li>a {
   color: #FFFFFF;
+  transition: background-color .4s ease,
+              color .5s ease;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: #F8512F;
+  background-color: rgba(30, 30, 30, .6);
 }
 
 .nav li a {
@@ -42,13 +56,13 @@ p {
 
 .carousel-caption h1 {
   font-size: 4em;
-  text-shadow: 0px 1px 3px black;
+  text-shadow: 1px 1px 3px black;
   color: #FFFFFF;
 }
 
 .carousel-caption p {
   font-size: 1.5em;
-  text-shadow: 0px 1px 2px black;
+  text-shadow: 1px 1px 2px black;
   color: #FFFFFF;
 }
 
@@ -74,13 +88,16 @@ p {
   background-image: url('../img/farm-2.jpg');
 }
 
+/* OUR STORY */
 #our_story {
-  min-height: 600px;
+  min-height: 700px;
   display: flex;
   align-items: center;
 }
 
-#our_story h1 {
+#our_story h1,
+#review h1,
+#menu h1 {
   font-family: 'Lobster', cursive;
   color: #F8512F;
   font-size: 6em;
@@ -91,7 +108,7 @@ p {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   font-size: 12em;
-  color: rgba(149, 147, 147, 0.2);
+  color: rgba(149, 147, 147, 0.3);
   position: absolute;
   z-index: -1;
 }
@@ -101,4 +118,116 @@ p {
   font-weight: 700;
   font-size: 2em;
   margin-top: 0;
+}
+
+#our_story p {
+  font-size: 1.3em;
+}
+
+/* QUOTE */
+#review {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 700px;
+  background-image: url(../img/food_review.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#review .container {
+  background-color: rgba(20, 20, 20, .6);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#review p {
+  color: #FFF;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  text-shadow: 1px 1px 5px #0A0A0A;
+}
+
+/* MENU */
+#menu {
+  background-image: url(../img/black_linen.png);
+  background-size: cover;
+  min-height: 700px;
+}
+
+#menu h1 {
+  color: #FFF;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#menu a {
+  color: #F8512F;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#appetizer, #lunch, #dinner, #dessert {
+  background-color: #FFF;
+}
+
+/* CONTACT */
+#contact {
+  background-color: #F8512F;
+  min-height: 700px;
+  color: #FFF;
+  padding-bottom: 50px;
+}
+
+#contact h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 4.7em;
+  margin-top: 50px;
+}
+
+#contact label {
+  font-size: 1.3em;
+}
+
+#contact span {
+  color: red;
+}
+
+#contact .col-md-12 {
+  margin-bottom: 50px;
+}
+
+#contact .col-md-12 p {
+  font-size: 1.5em;
+}
+
+#contact .col-md-6:nth-child(1) {
+  border: 1px solid white;
+  padding: 15px;
+  background-color: #FF6633;
+}
+
+#contact button {
+  font-size: 1.5em;
+}
+
+#contact #fine-print {
+  font-size: 1.1em;
+}
+
+#contact .col-md-offset-1 h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+#contact .col-md-offset-1 p {
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+#contact .col-md-offset-1 iframe {
+  /* margin-top: 15px; */
 }
